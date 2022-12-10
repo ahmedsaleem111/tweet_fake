@@ -1,3 +1,5 @@
+import json
+
 import instagrapi
 import datetime 
 
@@ -161,9 +163,7 @@ if __name__ == "__main__":
 
     for post in posts: 
         
-        print('\n\n\n')
-        for key, value in post.__dict__.items():
-            print(key, value)
+        print(json.dumps(post.__dict__))
 
 
 
