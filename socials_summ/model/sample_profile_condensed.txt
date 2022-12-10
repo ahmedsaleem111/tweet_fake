@@ -1,0 +1,202 @@
+_Post__timestamp 2021-07-16 03:49:32+00:00
+_Post__type Instagram
+_Post__sources None
+_Post__caption Flow State... #nyc2k21
+_Post__location ['Times Square, New York City', 'New York, New York']
+
+
+
+
+_Post__timestamp 2021-07-30 06:19:16+00:00
+_Post__type Instagram
+_Post__sources None
+_Post__caption Your perception of me is a reflection of you... 🪞
+_Post__location None
+
+
+
+
+_Post__timestamp 2022-12-08 22:30:26+00:00
+_Post__type Instagram
+_Post__sources None
+_Post__caption Meet Galactic Space Inspector Abu✨🌈✨#lensaAI
+_Post__location None
+
+
+
+
+_Post__timestamp 2022-11-14 20:03:38+00:00
+_Post__type Instagram
+_Post__sources None
+_Post__caption Him 🖤🧡
+_Post__location ['Glendale, California', '']
+
+
+
+
+_Post__timestamp 2022-10-03 02:44:27+00:00
+_Post__type Instagram
+_Post__sources None
+_Post__caption Eventful weekend with eventful folks ✨#bayarea #nightisyounggg
+_Post__location ['The Bay Area', '']
+
+
+
+
+_Post__timestamp 2022-09-12 20:44:52+00:00
+_Post__type Instagram
+_Post__sources None
+_Post__caption NYC 2k22 Dump (Part II)
+
+[1, 3, 4] - The Boysss 💀 (Times Square, Joe’s Pizza, Subway)
+[2] - Times Square
+[5, 6] - Oculus
+[7, 8] - Financial District
+[9, 10] - The Met
+
+#nyc2k22 #NightIsYounggg
+_Post__location ['New York, New York', '']
+
+
+
+
+_Post__timestamp 2022-09-12 20:32:35+00:00
+_Post__type Instagram
+_Post__sources None
+_Post__caption NYC 2k22 Dump (Part 1)
+
+[1, 3] - Brooklyn Heights
+[2, 4] - Manhattan Skyscrapers
+[5] - Sounds of NYC
+[6, 7] - Chrysler Building
+[8] - Grand Central
+[9] - Washington Square Arch
+[10] - Queensboro Bridge
+
+#nyc2k22 #NightIsYounggg
+_Post__location ['New York, New York', '']
+
+
+
+
+_Post__timestamp 2022-09-09 02:17:32+00:00
+_Post__type Instagram
+_Post__sources None
+_Post__caption A year later back, exploring the same spots… bulke raath ke chammak me… ✨🌃✨ #nyc2k22
+_Post__location ['Hudson Yards New York', 'New York, New York']
+
+
+
+
+_Post__timestamp 2022-08-27 19:43:43+00:00
+_Post__type Instagram
+_Post__sources None
+_Post__caption 🌴✨🌴
+_Post__location None
+
+
+
+
+_Post__timestamp 2022-08-27 09:54:01+00:00
+_Post__type Instagram
+_Post__sources None
+_Post__caption aH! 🙏
+_Post__location ['Anaheim, California', '']
+
+
+
+
+_Post__timestamp 2022-07-04 02:37:07+00:00
+_Post__type Instagram
+_Post__sources None
+_Post__caption Versace Versace… ✨
+_Post__location ['Versace Mansion', '']
+
+
+
+
+_Post__timestamp 2022-07-02 19:32:18+00:00
+_Post__type Instagram
+_Post__sources None
+_Post__caption 🌴🚣‍♂️🌴
+_Post__location ['Miami, Florida', '']
+
+
+
+
+_Post__timestamp 2022-07-02 07:33:42+00:00
+_Post__type Instagram
+_Post__sources None
+_Post__caption 🖤
+_Post__location ['Fort Lauderdale, Florida', '']
+
+
+
+
+_Post__timestamp 2022-05-13 14:12:04+00:00
+_Post__type Instagram
+_Post__sources None
+_Post__caption Just goin and goin…. ✨ #resonance
+_Post__location ['SoCal', 'San Gabriel, California']
+
+
+
+
+_Post__timestamp 2022-05-02 23:08:07+00:00
+_Post__type Instagram
+_Post__sources None
+_Post__caption Hella journey. Hella month. ✨
+
+Eid Mubarak from the Saleem Sibs !
+
+#EidIsYounggg #eidisyoung #eidulfitr2k22
+_Post__location None
+
+
+
+
+_Post__timestamp 2022-01-01 06:46:54+00:00
+_Post__type Instagram
+_Post__sources None
+_Post__caption As I reflect on 2021,  I've gained great appreciation for it.
+
+I've seen a ton, travelled lots, met many new faces, and have had insane heartbreaks... but Allah dont put you through new situations unless it's to help you grow!
+
+Thankful for everyone and everything, Alhumdullilah! On to 2022 ♾
+_Post__location None
+
+
+
+
+_Post__timestamp 2021-12-17 10:04:52+00:00
+_Post__type Instagram
+_Post__sources None
+_Post__caption Sushi Date 🥢
+_Post__location ['Oxnard, California', '']
+
+
+
+
+_Post__timestamp 2021-11-17 06:59:45+00:00
+_Post__type Instagram
+_Post__sources None
+_Post__caption Been a sweet min... 🏞
+_Post__location ['Malibu, California', '']
+
+
+
+
+_Post__timestamp 2021-11-12 08:19:08+00:00
+_Post__type Instagram
+_Post__sources None
+_Post__caption Chi Take ✌
+_Post__location ['The Windy City', '']
+
+
+
+
+_Post__timestamp 2021-11-12 02:04:06+00:00
+_Post__type Instagram
+_Post__sources None
+_Post__caption A dip in chi 📍
+_Post__location ['The Windy City', '']
