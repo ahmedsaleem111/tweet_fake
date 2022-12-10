@@ -18,6 +18,15 @@ class Source():
 
 
 
+class Corpus():
+
+    def __init__(self, *posts):
+        self.__posts = list(posts)
+    
+    @property
+    def posts(self): return self.__posts
+
+
 
 class Post():
     valid_types = ["Instagram", "Twitter", "Facebook"]
@@ -54,7 +63,7 @@ Specify a dummy root user (to allow access to public accounts)
 
 '''
 root_handle = 'socialssumm'
-root_password = "SocialsSummRoot!%!%"
+root_password = "Lahore1515!%!%"
 
 class PreProcessor():
 
@@ -97,9 +106,6 @@ class InstagramPreProcessor(PreProcessor):
 
                 for post in posts:
                     dict_ = post.__dict__
-
-
-
 
                     timestamp = dict_["taken_at"]
                     caption = dict_["caption_text"]

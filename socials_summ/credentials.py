@@ -15,3 +15,4 @@ class credentials():
         self.facebook_handle = facebook_handle
         self.facebook_password = facebook_password        
     
+    
