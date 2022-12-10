@@ -26,3 +26,6 @@ response = co.generate(
     max_tokens=40,
     temperature=0.8,
     stop_sequences=["--"])
+
+summary = response.generations[0].text
+print(summary)
