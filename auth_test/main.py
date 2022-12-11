@@ -37,6 +37,7 @@ def index():
         'index.html',
         tweets=[t[0] for t in session["generated"]] if "generated" in session else [],
         logged_in="oauth_token" in session,
+        background_image=os.path.join('static', 'fake_image.png'),
     )
 
 

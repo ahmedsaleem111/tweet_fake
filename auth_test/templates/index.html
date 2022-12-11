@@ -34,7 +34,6 @@
         #form-container {
             max-width: 600px;
             margin: 0 auto;
-            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
             background-color: #fff;
             border-radius: 14px;
             margin-top: 50px;
@@ -100,13 +99,14 @@
 
 <body>
     <div class="container">
+        <center><img src="{{ background_image }} " style="width:250px;height:250px;"></center>
 
         <h2>Tweetfake</h2>
-        <h4>description about project here</h4>
+        <h5>Generate a fake tweet. </h5>
 
         <div id="form-container">
             <div id="form-wrapper">
-                <form id="form" action="/tweets/" method="post">
+                <form id="form" action="/tweet" method="post">
                     <div class="flex: 3">
                         <input id="title" class="form-control" type="text" name="tw_username" placeholder="Twitter username">
                         <input id="submit" class="btn" type="submit" name="tw_username" value="Tweets" {% if not logged_in %} disabled {% endif %}>
