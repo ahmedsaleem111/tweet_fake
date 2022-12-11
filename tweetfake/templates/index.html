@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Tweet Scheduler</title>
+    <title>Tweetfake</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -12,6 +12,8 @@
     <style type="text/css">
         body {
             background: linear-gradient(to bottom right, #ffffff, #ffffff);
+            background-image: url('/static/tweetfake_background.png');
+            background-size: 2500px;
             color: #000000;
         }
 
@@ -27,11 +29,40 @@
             text-align: center;
         }
 
+
+
+
+        #tranparent-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 14px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            opacity: .5;
+            justify-content: space-around;
+            align-items: flex-start;
+
+        }
+
+
         div.container {
             padding: 30px;
         }
 
         #form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 14px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            justify-content: space-around;
+            align-items: flex-start;
+
+        }
+        #form-container2 {
             max-width: 600px;
             margin: 0 auto;
             background-color: #fff;
@@ -54,6 +85,14 @@
         }
 
         #form-wrapper {
+            top: 0rem;
+            border-bottom: 1px solid #e9e9e9;
+            border-radius: 14px;
+            background-color: #fff;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+            padding: 40px;
+        }
+        #form-wrapper2 {
             top: 0rem;
             border-bottom: 1px solid #e9e9e9;
             border-radius: 14px;
@@ -98,16 +137,24 @@
 </head>
 
 <body>
+
+    <!-- <img src="{{ background_image }} " style="width:100%;height:100%;"> -->
+
     <div class="container">
-        <center><img src="{{ background_image }} " style="width:250px;height:250px;"></center>
+        <br>
+        <br>
+        <h1 style="color: white">Tweet Fake</h1>
+        <br>
+        <br>
+        <h5 style="color: white">Now, what is something I would tweet... &#129300; </h5>
 
-        <h2>Tweetfake</h2>
-        <h5>Generate a fake tweet. </h5>
+        <br>
 
-        <div id="form-container">
-            <div id="form-wrapper">
-                <form id="form" action="/tweets/" method="post">
-                    <div class="flex: 3">
+        <div id="transparent-container">
+            <div id="form-container">
+                <div id="form-wrapper">
+                    <form id="form" action="/tweet" method="post">
+                        <div class="flex: 3">
                         <input id="title" class="form-control" type="text" name="tw_username" placeholder="Twitter username">
                         <input id="submit" class="btn" type="submit" name="tw_username" value="Tweets" {% if not logged_in %} disabled {% endif %}>
 
@@ -126,16 +173,28 @@
             </div>
         </div>
 
-        <div id="task-container">
-            <ul>
-                {% for tweet in tweets %}
-                <li>
-                    {{tweet}}
-                </li>
-                {% endfor %}
+        <div id="form-container2">
+                <div id="form-wrapper2">
+                    <form id="form2" action="/tweet" method="post">
+                        <div class="flex: 3">
+                            <ul>
+                                {% for tweet in tweets %}
+                                <table>
+                                    "{{tweet}}"
+                                    <h3> </h3>
 
-            </ul>
+                                </table>
+                                {% endfor %}
+
+                            </ul>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
+
+
     </div>
 </body>
 
