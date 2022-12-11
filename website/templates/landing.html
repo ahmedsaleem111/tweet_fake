@@ -43,6 +43,18 @@
             align-items: flex-start;
 
         }
+        #form-container2 {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 14px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            justify-content: space-around;
+            align-items: flex-start;
+
+        }
 
         #task-container {
             max-width: 600px;
@@ -54,6 +66,14 @@
         }
 
         #form-wrapper {
+            top: 0rem;
+            border-bottom: 1px solid #e9e9e9;
+            border-radius: 14px;
+            background-color: #fff;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+            padding: 40px;
+        }
+        #form-wrapper2 {
             top: 0rem;
             border-bottom: 1px solid #e9e9e9;
             border-radius: 14px;
@@ -99,10 +119,10 @@
 
 <body>
     <div class="container">
-        <center><img src="{{ background_image }} " style="width:250px;height:250px;"></center>
 
         <h2>Tweet Fake</h2>
         <h5>Generate a fake tweet. </h5>
+        <center><img src="{{ background_image }} " style="width:250px;height:250px;"></center>
 
         <div id="form-container">
             <div id="form-wrapper">
@@ -116,18 +136,27 @@
             </div>
         </div>
 
-        <div id="task-container">
-            <ul>
-                {% for tweet in tweets %}
-                <table>
-                    "{{tweet}}"
-                    <h3> </h3>
 
-                </table>
-                {% endfor %}
+        <div id="form-container2">
+            <div id="form-wrapper2">
+                <form id="form2" action="/tweet" method="post">
+                    <div class="flex: 3">
+                        <ul>
+                            {% for tweet in tweets %}
+                            <table>
+                                "{{tweet}}"
+                                <h3> </h3>
 
-            </ul>
+                            </table>
+                            {% endfor %}
+
+                        </ul>
+
+                    </div>
+                </form>
+            </div>
         </div>
+
     </div>
 </body>
 
