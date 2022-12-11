@@ -3,7 +3,7 @@ from typing import Optional
 
 import pandas as pd
 
-from socials_summ.model.preprocessing import Corpus
+from tweetfake.model.preprocessing import Corpus
 
 
 TWEET_PREFIX = "Tweet:"

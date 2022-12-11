@@ -7,9 +7,9 @@ from typing import Tuple, List
 import requests
 from requests_oauthlib import OAuth2Session
 
-from socials_summ.model.filter_posts import get_prompt
-from socials_summ.model.generate import GeneratedText, generate_text
-from socials_summ.model.preprocessing import Corpus, Post
+from tweetfake.model.filter_posts import get_prompt
+from tweetfake.model.generate import GeneratedText, generate_text
+from tweetfake.model.preprocessing import Corpus, Post
 
 scopes = ["tweet.read", "users.read"]
 

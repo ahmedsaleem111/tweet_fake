@@ -2,9 +2,8 @@ import os
 
 from flask import Flask, request, session, redirect, render_template, url_for
 from dotenv import load_dotenv
-from requests_oauthlib import OAuth2Session
 
-from auth_test.tweets import make_token, generate_challenge, get_tweets, generate_tweets
+from tweetfake.tweets import make_token, generate_challenge, generate_tweets
 
 app = Flask(__name__)
 app.secret_key = os.urandom(50)

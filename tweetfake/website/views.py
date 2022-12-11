@@ -1,7 +1,7 @@
 
 from flask import Blueprint, render_template, request
-from socials_summ.website.templates import *
-from socials_summ.model.preprocessing import *
+from tweetfake.website.templates import *
+from tweetfake.model.preprocessing import *
 
 
 views = Blueprint('views', __name__)
