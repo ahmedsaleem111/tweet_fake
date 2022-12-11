@@ -35,10 +35,11 @@ def get_prompt_text(captions: pd.Series) -> str:
 def get_new_prompt(df: pd.DataFrame, topn: int = 30) -> str:
     # filter out retweets, preprocess the remaining tweets, and keep the
     # most popular `topn`
-    df_no_retweets = df[~df.caption.str.startswith("RT @")]
+    df_no_nulls = df[~df.caption.isnull()]
+    df_no_retweets = df_no_nulls[~df_no_nulls.caption.str.startswith("RT @")]
     df_preproc = df_no_retweets.assign(
         caption=df_no_retweets.caption.apply(preprocess_tweet_text)
     ).sort_values("favorites").tail(topn)
 
     # output prompt for the model
-    return get_prompt_text(df_preproc.captions)
+    return get_prompt_text(df_preproc.caption)
