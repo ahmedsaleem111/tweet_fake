@@ -2,6 +2,7 @@
 from flask import Blueprint, render_template, request, redirect, url_for
 from website.templates import *
 from model.preprocessing import *
+import os
 
 tweets = []
 
@@ -18,7 +19,8 @@ def landing():
     return render_template("landing.html",
         depth2Var=False,
         # summary_text=''
-        tweets = tweets
+        tweets = tweets,
+        background_image=os.path.join('static', 'fake_image.png')
     )
 
 
