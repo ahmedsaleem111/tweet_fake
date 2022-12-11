@@ -37,13 +37,15 @@ class Post():
         type="Instagram",
         sources=None, # list of Source Objects
         caption=None,
-        location=None    
+        location=None,
+        likes=None,
     ):
         self.__timestamp =timestamp
         self.__type = type
         self.__sources = sources
         self.__caption = caption
         self.__location = location
+        self.__likes = likes
 
     @property
     def type(self): return self.__type
@@ -55,6 +57,8 @@ class Post():
     def caption(self): return self.__caption
     @property
     def location(self): return self.__location
+    @property
+    def likes(self): return self.__likes
 
 
 

@@ -19,9 +19,15 @@ def preprocess_tweet_text(text: str) -> Optional[str]:
 
 def read_tweets(corpus: Corpus) -> pd.DataFrame:
     """
-    Takes a corpus and returns a dataframe with 2 columns: (caption, favorites)
+    Takes a corpus and returns a dataframe with 2 columns: (caption, likes)
     """
-    raise NotImplementedError
+    captions = []
+    likes = []
+    for post in corpus.posts:
+        captions.append(post.caption)
+        likes.append(post.likes)
+
+    return pd.DataFrame({"caption": captions, "likes": likes})
 
 
 def print_post_prompt(caption: str) -> str:
@@ -39,7 +45,12 @@ def get_new_prompt(df: pd.DataFrame, topn: int = 30) -> str:
     df_no_retweets = df_no_nulls[~df_no_nulls.caption.str.startswith("RT @")]
     df_preproc = df_no_retweets.assign(
         caption=df_no_retweets.caption.apply(preprocess_tweet_text)
-    ).sort_values("favorites").tail(topn)
+    ).sort_values("likes").tail(topn)
 
     # output prompt for the model
     return get_prompt_text(df_preproc.caption)
+
+
+def get_prompt(corpus: Corpus, topn: int = 30) -> str:
+    df = read_tweets(corpus)
+    return get_new_prompt(df, topn)
