@@ -13,7 +13,7 @@ client_id = os.environ.get("TWITTER_API_KEY")
 client_secret = os.environ.get("TWITTER_API_SECRET")
 auth_url = "https://twitter.com/i/oauth2/authorize"
 token_url = "https://api.twitter.com/2/oauth2/token"
-deploy_url = "https://3ce2-84-115-219-119.eu.ngrok.io"
+deploy_url = "https://tweetfake.dcferreira.com"
 redirect_uri = deploy_url + "/oauth/callback"
 
 code_verifier, code_challenge = generate_challenge()
