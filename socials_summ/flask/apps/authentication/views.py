@@ -24,7 +24,13 @@ from apps.authentication.util import verify_pass
 def route_default():
     # return redirect(url_for('authentication_blueprint.login'))
     # return redirect(url_for('/index'))
-    return redirect(url_for('home_blueprint.index'))
+    return redirect(url_for('home_blueprint.landing'))
+
+
+
+
+
+
 
 # Login & Registration
 
@@ -35,7 +41,7 @@ def login_github():
         return redirect(url_for("github.login"))
 
     res = github.get("/user")
-    return redirect(url_for('home_blueprint.index'))
+    return redirect(url_for('home_blueprint.landing'))
 
 @blueprint.route('/login', methods=['GET', 'POST'])
 def login():
@@ -63,7 +69,7 @@ def login():
     if not current_user.is_authenticated:
         return render_template('accounts/login.html',
                                form=login_form)
-    return redirect(url_for('home_blueprint.index'))
+    return redirect(url_for('home_blueprint.landing'))
 
 
 @blueprint.route('/register', methods=['GET', 'POST'])
@@ -97,7 +103,7 @@ def register():
 
         # Delete user from session
         logout_user()
-        
+
         return render_template('accounts/register.html',
                                msg='Account created successfully.',
                                success=True,

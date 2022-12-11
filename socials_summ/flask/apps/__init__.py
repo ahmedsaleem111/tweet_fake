@@ -20,7 +20,7 @@ def register_extensions(app):
 
 def register_blueprints(app):
     for module_name in ('authentication', 'home'):
-        module = import_module('apps.{}.routes'.format(module_name))
+        module = import_module('apps.{}.views'.format(module_name))
         app.register_blueprint(module.blueprint)
 
 
@@ -34,7 +34,8 @@ def configure_database(app):
     def shutdown_session(exception=None):
         db.session.remove()
 
-from apps.authentication.oauth import github_blueprint
+# from apps.authentication.oauth import github_blueprint
+from apps.home import blueprint
 
 
 def create_app(config):
@@ -43,7 +44,8 @@ def create_app(config):
     register_extensions(app)
     register_blueprints(app)
 
-    app.register_blueprint(github_blueprint, url_prefix="/dashboard")
-    
+    # app.register_blueprint(github_blueprint, url_prefix="/dashboard")
+    # app.register_blueprint(blueprint, url_prefix="/")
+
     configure_database(app)
     return app
