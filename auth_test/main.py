@@ -1,7 +1,8 @@
 import os
 
-from flask import Flask, request, session, redirect, render_template
+from flask import Flask, request, session, redirect, render_template, url_for
 from dotenv import load_dotenv
+from requests_oauthlib import OAuth2Session
 
 from auth_test.tweets import make_token, generate_challenge, get_tweets, generate_tweets
 
@@ -32,7 +33,20 @@ def demo():
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template(
+        'index.html',
+        tweets=[t[0] for t in session["generated"]] if "generated" in session else [],
+        logged_in="oauth_token" in session,
+    )
+
+
+@app.route('/tweets/', methods=['POST'])
+def submit_credentials():
+    username = request.form['tw_username']
+
+    texts = generate_tweets(session["oauth_token"], username, temperature=3.0)
+    session["generated"] = texts
+    return redirect(url_for(".index"))
 
 
 @app.route("/oauth/callback", methods=["GET"])
@@ -44,9 +58,8 @@ def callback():
         code_verifier=code_verifier,
         code=code,
     )
-    texts = generate_tweets(token, "billgates", temperature=0.8)
-    print(texts)
-    return redirect('/')
+    session["oauth_token"] = token
+    return redirect(url_for(".index"))
 
 
 
